@@ -5,3 +5,4 @@
 {{ with .Site.GetPage "/articles" }}
 <a href="{{ "articles" | relURL }}">Articles</a>
 {{ end }}
+<a href="{{ relURL "index.xml" }}">RSS</a>
