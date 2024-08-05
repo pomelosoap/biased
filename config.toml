@@ -23,9 +23,9 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "酌油笔记(en)"
-    languageName = "en-US 🇺🇸"
-    LanguageCode = "en-US"
+    title = "[[Biased Memo]]"
+    languageName = "English"
+    LanguageCode = "en"
     contentDir = "content"
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
@@ -34,17 +34,41 @@ enableRobotsTXT = true
         name = "Articles"
         url = "/articles"
         weight = 1
-  [languages.pt]
-    title = "酌油笔记(pt)"
-    languageName = "pt-BR 🇧🇷"
-    LanguageCode = "pt-BR"
-    contentDir = "content.pt"
-    [languages.pt.params]
+  [languages.ja]
+    title = "「偏ったメモ」"
+    languageName = "日本語"
+    LanguageCode = "ja"
+    contentDir = "content.ja"
+    [languages.ja.params]
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
-    [languages.pt.menu]
-      [[languages.pt.menu.main]]
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
         name = "Articles"
-        url = "/pt/articles"
+        url = "/ja/articles"
+        weight = 1
+  [languages.zh-Hans]
+    title = "「偏颇笔记」"
+    languageName = "简体字"
+    LanguageCode = "zh-Hans"
+    contentDir = "content.zh-Hans"
+    [languages.zh-Hans.params]
+      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
+    [languages.zh-Hans.menu]
+      [[languages.zh-Hans.menu.main]]
+        name = "Articles"
+        url = "/zh-Hans/articles"
+        weight = 1
+  [languages.zh-Hant]
+    title = "「偏頗筆記」"
+    languageName = "正體字"
+    LanguageCode = "zh-Hant"
+    contentDir = "content.zh-Hant"
+    [languages.zh-Hant.params]
+      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
+    [languages.zh-Hant.menu]
+      [[languages.zh-Hant.menu.main]]
+        name = "Articles"
+        url = "/zh-Hant/articles"
         weight = 1
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
