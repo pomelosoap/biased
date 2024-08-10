@@ -10,7 +10,9 @@
 {{ end }}
 
 |
-
+<div class="toggle-group">
+  <label for="toggle">🌏</label>
+  <div class="popup" id="popup">
 <!-- Create a link to every translation -->
 {{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
   {{ with (index $translations .Lang) }}
@@ -22,3 +24,5 @@
     {{ end }}
   {{ end }}
 {{ end }}
+</div>
+</div>

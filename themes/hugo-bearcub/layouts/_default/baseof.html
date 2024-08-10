@@ -49,6 +49,24 @@
   Simply place a custom_body.html into
   your local /layouts/partials-directory -->
   {{- partial "custom_body.html" . -}}
+
+  <script>
+    document.querySelector('.toggle-group label').addEventListener('click', function() {
+      var popup = document.getElementById('popup');
+      if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+      } else {
+        popup.style.display = 'block';
+      }
+    });
+    // Close the popup when clicking outside of it
+    window.addEventListener('click', function(event) {
+      var popup = document.getElementById('popup');
+      if (!event.target.matches('.toggle-group label') && !event.target.closest('.popup')) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 
 </html>
