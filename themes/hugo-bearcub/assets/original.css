@@ -4,11 +4,11 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: #1d1f27;
+  background-color: #fff;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #c9d1d9;
+  color: #0D1613;
 }
 
 h1,
@@ -19,11 +19,11 @@ h5,
 h6,
 strong,
 b {
-  color: #eee;
+  color: #0D1613;
 }
 
 a {
-  color: #8cc2dd;
+  color: #52973f;
 }
 
 .title {
@@ -130,7 +130,7 @@ ul.blog-posts li span {
 }
 
 ul.blog-posts li a:visited {
-  color: #8b6fcb;
+  color: #0A4936;
 }
 
 a.blog-tags {
