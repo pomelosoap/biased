@@ -31,8 +31,8 @@ enableRobotsTXT = true
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
     [languages.en.menu]
       [[languages.en.menu.main]]
-        name = "Articles"
-        url = "/articles"
+        name = "Essays"
+        url = "/posts"
         weight = 1
       [[languages.en.menu.main]]
         name = "RSS"
@@ -47,8 +47,8 @@ enableRobotsTXT = true
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
     [languages.ja.menu]
       [[languages.ja.menu.main]]
-        name = "Articles"
-        url = "/ja/articles"
+        name = "随筆"
+        url = "/ja/posts"
         weight = 1
       [[languages.ja.menu.main]]
         name = "RSS"
@@ -56,15 +56,15 @@ enableRobotsTXT = true
         weight = 2
   [languages.zh-Hans]
     title = "「偏颇笔记」"
-    languageName = "简体字"
+    languageName = "简体"
     LanguageCode = "zh-Hans"
     contentDir = "content.zh-Hans"
     [languages.zh-Hans.params]
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
     [languages.zh-Hans.menu]
       [[languages.zh-Hans.menu.main]]
-        name = "Articles"
-        url = "/zh-hans/articles"
+        name = "随笔"
+        url = "/zh-hans/posts"
         weight = 1
       [[languages.zh-Hans.menu.main]]
         name = "RSS"
@@ -72,20 +72,20 @@ enableRobotsTXT = true
         weight = 2
   [languages.zh-Hant]
     title = "「偏頗筆記」"
-    languageName = "正體字"
+    languageName = "正體"
     LanguageCode = "zh-Hant"
     contentDir = "content.zh-Hant"
     [languages.zh-Hant.params]
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
     [languages.zh-Hant.menu]
       [[languages.zh-Hant.menu.main]]
-        name = "Articles"
-        url = "/zh-hant/articles"
+        name = "隨筆"
+        url = "/zh-hant/posts"
         weight = 1
       [[languages.zh-Hant.menu.main]]
         name = "RSS"
         url = "/zh-hant/index.xml"
-        weight = 1
+        weight = 2
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
   # description = "Welcome to Biased Memo, a comprehensive resource designed to inspire and empower your journey toward greater productivity and self-improvement. We delve deep into the realms of computer science, artificial intelligence, and the latest in tech news, while also exploring the timeless wisdom of philosophy, economics, and political philosophy. Our content spans across history’s lessons, modern-day technological advancements, and the art of reading and writing. Whether you're here to enhance your skills, expand your knowledge, or gain new perspectives, Biased Memo offers insightful articles, practical advice, and thought-provoking discussions that cater to curious minds eager to learn and grow."

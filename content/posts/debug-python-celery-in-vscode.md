@@ -2,6 +2,7 @@
 title: "使用 VSCode 高效调试 Python 项目和 Celery 任务"
 description: "如何使用 VSCode 进行 Python 调试，包括异步的 Celery 任务"
 author: 3TinyBites
+twitter: 3tinybites
 date: 2023-03-10
 draft: false
 tags:
