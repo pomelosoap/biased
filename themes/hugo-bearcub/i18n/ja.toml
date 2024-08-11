@@ -1,0 +1,14 @@
+[filtering-for]
+  other = "フィルタリング対象"
+
+[no-posts]
+  other = "まだ投稿がありません"
+
+[email-subject]
+  other = "への返信"
+
+[email-reply]
+  other = "この投稿にメールで返信"
+
+[skip-link]
+  other = "メインコンテンツへスキップ"

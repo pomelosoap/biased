@@ -1,0 +1,14 @@
+[filtering-for]
+  other = "篩選條件"
+
+[no-posts]
+  other = "暫無帖子"
+
+[email-subject]
+  other = "回覆"
+
+[email-reply]
+  other = "通過電子郵件回覆此帖子"
+
+[skip-link]
+  other = "跳到主要內容"
