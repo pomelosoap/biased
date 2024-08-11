@@ -51,22 +51,33 @@
   {{- partial "custom_body.html" . -}}
 
   <script>
-    document.querySelector('.toggle-group label').addEventListener('click', function() {
+    document.querySelector('.toggle-group label').addEventListener('click', function(event) {
       var popup = document.getElementById('popup');
       if (popup.style.display === 'block') {
         popup.style.display = 'none';
       } else {
         popup.style.display = 'block';
       }
+      event.stopPropagation(); // Prevent click from bubbling up to the window
     });
+  
     // Close the popup when clicking outside of it
     window.addEventListener('click', function(event) {
       var popup = document.getElementById('popup');
-      if (!event.target.matches('.toggle-group label') && !event.target.closest('.popup')) {
+      if (popup.style.display === 'block' && !event.target.closest('.toggle-group')) {
+        popup.style.display = 'none';
+      }
+    });
+  
+    // Handle touch events for mobile devices
+    window.addEventListener('touchstart', function(event) {
+      var popup = document.getElementById('popup');
+      if (popup.style.display === 'block' && !event.target.closest('.toggle-group')) {
         popup.style.display = 'none';
       }
     });
   </script>
+  
 </body>
 
 </html>
