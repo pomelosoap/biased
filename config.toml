@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "https://example.com"
 theme = "hugo-bearcub"
-copyright = "Copyright © 2024 @老柚子"
+copyright = "Copyright © 2024"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
@@ -23,7 +23,7 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "[[Biased Memo]]"
+    title = "Biased Memo"
     languageName = "English"
     LanguageCode = "en"
     contentDir = "content"
@@ -87,7 +87,7 @@ enableRobotsTXT = true
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "酌油笔记"
+  title = "Biased Memo"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
@@ -96,7 +96,7 @@ enableRobotsTXT = true
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can
   # have the theme simply not show any link
-  hideUntranslated = false
+  hideUntranslated = true
 
   # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
   # "herman". The former is what you see on Bear Cub's demo (an optimized
@@ -113,12 +113,12 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [params.social]
-    twitter = "example" # Twitter handle (without '@')
-    facebook_admin = "0000000000" # Facebook Page Admin ID
+    twitter = "3tinybites" # Twitter handle (without '@')
+  #  facebook_admin = "0000000000" # Facebook Page Admin ID
 
   # Author metadata. This is mostly used for the RSS feed of your site, but the
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
   [params.author]
-    name = "老柚子" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+    name = "3TinyBites" # Your name as shown in the RSS feed metadata
+    email = "tinybites42@gmail.com" # Added to the footer so readers can reply to posts
