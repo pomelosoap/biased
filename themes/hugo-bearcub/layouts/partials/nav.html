@@ -1,7 +1,6 @@
 {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
-<a href='/rss/'>RSS</a>
 
 <!-- Convert this page's translations into a dict -->
 {{ $translations := dict }}

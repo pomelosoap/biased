@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "https://example.com"
 theme = "hugo-bearcub"
-copyright = "Copyright © 2024"
+copyright = "© 2024 @3TinyBites"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
@@ -34,6 +34,10 @@ enableRobotsTXT = true
         name = "Articles"
         url = "/articles"
         weight = 1
+      [[languages.en.menu.main]]
+        name = "RSS"
+        url = "/index.xml"
+        weight = 2
   [languages.ja]
     title = "「偏ったメモ」"
     languageName = "日本語"
@@ -45,6 +49,10 @@ enableRobotsTXT = true
       [[languages.ja.menu.main]]
         name = "Articles"
         url = "/ja/articles"
+        weight = 1
+      [[languages.ja.menu.main]]
+        name = "RSS"
+        url = "/ja/index.xml"
         weight = 2
   [languages.zh-Hans]
     title = "「偏颇笔记」"
@@ -57,7 +65,11 @@ enableRobotsTXT = true
       [[languages.zh-Hans.menu.main]]
         name = "Articles"
         url = "/zh-hans/articles"
-        weight = 3
+        weight = 1
+      [[languages.zh-Hans.menu.main]]
+        name = "RSS"
+        url = "/zh-hans/index.xml"
+        weight = 2
   [languages.zh-Hant]
     title = "「偏頗筆記」"
     languageName = "正體字"
@@ -69,7 +81,11 @@ enableRobotsTXT = true
       [[languages.zh-Hant.menu.main]]
         name = "Articles"
         url = "/zh-hant/articles"
-        weight = 4
+        weight = 1
+      [[languages.zh-Hant.menu.main]]
+        name = "RSS"
+        url = "/zh-hant/index.xml"
+        weight = 1
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "Welcome to Biased Memo, a comprehensive resource designed to inspire and empower your journey toward greater productivity and self-improvement. We delve deep into the realms of computer science, artificial intelligence, and the latest in tech news, while also exploring the timeless wisdom of philosophy, economics, and political philosophy. Our content spans across history’s lessons, modern-day technological advancements, and the art of reading and writing. Whether you're here to enhance your skills, expand your knowledge, or gain new perspectives, Biased Memo offers insightful articles, practical advice, and thought-provoking discussions that cater to curious minds eager to learn and grow."
