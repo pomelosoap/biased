@@ -56,7 +56,7 @@ enableRobotsTXT = true
     [languages.zh-Hans.menu]
       [[languages.zh-Hans.menu.main]]
         name = "Articles"
-        url = "/zh-Hans/articles"
+        url = "/zh-hans/articles"
         weight = 3
   [languages.zh-Hant]
     title = "「偏頗筆記」"
@@ -68,7 +68,7 @@ enableRobotsTXT = true
     [languages.zh-Hant.menu]
       [[languages.zh-Hant.menu.main]]
         name = "Articles"
-        url = "/zh-Hant/articles"
+        url = "/zh-hant/articles"
         weight = 4
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.

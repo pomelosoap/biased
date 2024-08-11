@@ -8,5 +8,5 @@ draft: false
 
 - [English](/index.xml)
 - [日本語](/ja/index.xml)
-- [简体字](/zh-Hans/index.xml)
-- [正體字](/zh-Hant/index.xml)
+- [简体字](/zh-hans/index.xml)
+- [正體字](/zh-hant/index.xml)
