@@ -1,12 +1,25 @@
 <!-- Dynamic social card generation -->
-{{ $font := resources.GetRemote "https://github.com/google/fonts/raw/main/ofl/firamono/FiraMono-Bold.ttf" }}
+{{ $defaultFont := resources.GetRemote "https://github.com/google/fonts/raw/539cd46437b64ccdf41f21e253946625f4e31f28/ofl/roboto/Roboto%5Bwdth,wght%5D.ttf" }}
+{{ $jpFont := resources.GetRemote "https://github.com/google/fonts/raw/539cd46437b64ccdf41f21e253946625f4e31f28/ofl/mochiypopone/MochiyPopOne-Regular.ttf" }}
+{{ $zhFont := resources.GetRemote "https://github.com/google/fonts/raw/539cd46437b64ccdf41f21e253946625f4e31f28/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf" }}
+
+{{ $font := $defaultFont }}
+
+{{ if eq .Page.Lang "jp" }}
+  {{ $font = $jpFont }}
+{{ else if eq .Page.Lang "zh-Hans" }}
+  {{ $font = $zhFont }}
+{{ else if eq .Page.Lang "zh-Hant" }}
+  {{ $font = $zhFont }}
+{{ end }}
+
 {{ $fg := resources.Get "images/social_card_fg.png"}}
 {{ $bg := resources.Get "images/social_card_bg.png"}}
 
 {{ if gt (len .Title) 45 }}
   {{ $fg = $fg.Filter (images.Text .Title (dict
     "font" $font
-    "color" "#fafafa"
+    "color" "#9BE887"
     "size" 95
     "linespacing" 16
     "x" 0
@@ -15,7 +28,7 @@
 {{ else }}
   {{ $fg = $fg.Filter (images.Text .Title (dict
     "font" $font
-    "color" "#fafafa"
+    "color" "#9BE887"
     "size" 130
     "linespacing" 20
     "x" 0
@@ -29,7 +42,7 @@
 
 {{ $fg = $fg.Filter (images.Text $byline (dict
     "font" $font
-    "color" "#898a8d"
+    "color" "#E9F5E6"
     "size" 60
     "linespacing" 30
     "x" 0
