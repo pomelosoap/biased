@@ -88,7 +88,8 @@ enableRobotsTXT = true
         weight = 1
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Welcome to Biased Memo, a comprehensive resource designed to inspire and empower your journey toward greater productivity and self-improvement. We delve deep into the realms of computer science, artificial intelligence, and the latest in tech news, while also exploring the timeless wisdom of philosophy, economics, and political philosophy. Our content spans across history’s lessons, modern-day technological advancements, and the art of reading and writing. Whether you're here to enhance your skills, expand your knowledge, or gain new perspectives, Biased Memo offers insightful articles, practical advice, and thought-provoking discussions that cater to curious minds eager to learn and grow."
+  # description = "Welcome to Biased Memo, a comprehensive resource designed to inspire and empower your journey toward greater productivity and self-improvement. We delve deep into the realms of computer science, artificial intelligence, and the latest in tech news, while also exploring the timeless wisdom of philosophy, economics, and political philosophy. Our content spans across history’s lessons, modern-day technological advancements, and the art of reading and writing. Whether you're here to enhance your skills, expand your knowledge, or gain new perspectives, Biased Memo offers insightful articles, practical advice, and thought-provoking discussions that cater to curious minds eager to learn and grow."
+  description = "Biased Memo offers insights on productivity, self-improvement, tech, AI, philosophy, and more, delivering articles and advice to help you grow, learn, and expand your knowledge."
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
