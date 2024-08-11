@@ -4,6 +4,18 @@
 <meta name="author" content="{{ with .Params.author }}{{ . }}{{ end }}" />
 <meta name="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
 
+<!-- Canonical URL -->
+{{ $defaultLang := "en" }}
+{{ $currentLang := .Lang }}
+{{ $currentPermalink := .Permalink }}
+
+{{ if eq $currentLang $defaultLang }}
+<link rel="canonical" href="{{ $currentPermalink }}">
+{{ else }}
+{{ $canonicalPermalink := replace $currentPermalink (printf "/%s/" $currentLang) "/" }}
+<link rel="canonical" href="{{ $canonicalPermalink }}">
+{{ end }}
+
 <!-- Only generate social card if: -->
 <!--   - generateSocialCard = true -->
 <!--   - there aren't images set in frontmatter -->
