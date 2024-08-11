@@ -1,7 +1,7 @@
 {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
-<a href='{{ absURL "index.xml" }}'>RSS</a>
+<a href='/rss/'>RSS</a>
 
 <!-- Convert this page's translations into a dict -->
 {{ $translations := dict }}
@@ -9,20 +9,30 @@
   {{ $translations = merge $translations (dict .Language.Lang .) }}
 {{ end }}
 
-|
-<div class="toggle-group">
-  <label for="toggle">🌏</label>
-  <div class="popup" id="popup">
-<!-- Create a link to every translation -->
+<!-- Check if there are any translations available -->
+{{ $hasTranslations := false }}
 {{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
   {{ with (index $translations .Lang) }}
-    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
-  {{ else }}
-    <!-- The complicated setup was necessary to make a grayed out link -->
-    {{ if not .Params.hideUntranslated }}
-      <a class="disabled" role="link" aria-disabled="true">{{ .LanguageName }}</a>
-    {{ end }}
+    {{ $hasTranslations = true }}
   {{ end }}
 {{ end }}
-</div>
-</div>
+
+{{ if $hasTranslations }}
+  |
+  <div class="toggle-group">
+    <label for="toggle">🌏</label>
+    <div class="popup" id="popup">
+      <!-- Create a link to every translation -->
+      {{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
+        {{ with (index $translations .Lang) }}
+          <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{ else }}
+          <!-- The complicated setup was necessary to make a grayed out link -->
+          {{ if not .Params.hideUntranslated }}
+            <a class="disabled" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

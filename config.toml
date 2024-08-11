@@ -45,7 +45,7 @@ enableRobotsTXT = true
       [[languages.ja.menu.main]]
         name = "Articles"
         url = "/ja/articles"
-        weight = 1
+        weight = 2
   [languages.zh-Hans]
     title = "「偏颇笔记」"
     languageName = "简体字"
@@ -57,7 +57,7 @@ enableRobotsTXT = true
       [[languages.zh-Hans.menu.main]]
         name = "Articles"
         url = "/zh-Hans/articles"
-        weight = 1
+        weight = 3
   [languages.zh-Hant]
     title = "「偏頗筆記」"
     languageName = "正體字"
@@ -69,7 +69,7 @@ enableRobotsTXT = true
       [[languages.zh-Hant.menu.main]]
         name = "Articles"
         url = "/zh-Hant/articles"
-        weight = 1
+        weight = 4
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "手艺人，打磨技艺的技艺"
