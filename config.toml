@@ -39,7 +39,7 @@ enableRobotsTXT = true
         url = "/index.xml"
         weight = 2
   [languages.ja]
-    title = "「偏ったメモ」"
+    title = "偏ったメモ"
     languageName = "日本語"
     LanguageCode = "ja"
     contentDir = "content.ja"
@@ -55,7 +55,7 @@ enableRobotsTXT = true
         url = "/ja/index.xml"
         weight = 2
   [languages.zh-Hans]
-    title = "「偏颇笔记」"
+    title = "偏颇笔记"
     languageName = "简体"
     LanguageCode = "zh-Hans"
     contentDir = "content.zh-Hans"
@@ -71,7 +71,7 @@ enableRobotsTXT = true
         url = "/zh-hans/index.xml"
         weight = 2
   [languages.zh-Hant]
-    title = "「偏頗筆記」"
+    title = "偏頗筆記"
     languageName = "正體"
     LanguageCode = "zh-Hant"
     contentDir = "content.zh-Hant"
